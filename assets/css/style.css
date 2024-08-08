@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(109, 127, 143);
+}
+
+.quiz-container {
+
+display: flex;
+flex-direction: column;
+width: 30rem;
+max-width: 80%;
+background-color: beige;
+border-radius: 0.5rem;
+}
+
+#question-container{
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+#questions {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+#answer-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    gap: 1.20rem;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+input{
+    width: fit-content;
+}
+.btn {
+    padding: 1.3rem;
+    background-color: rgb(161, 161, 69);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 0 0 0.5rem 0.5rem;
+
+}
