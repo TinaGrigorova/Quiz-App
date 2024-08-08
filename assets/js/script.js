@@ -50,3 +50,29 @@ const questions = [
 ]
 
 startQuiz();
+
+function startQuiz(){
+score = 0;
+questionContainer.style.display="flex";
+shuffledQuestions = questions.sort(() => Math.random() -0.5);
+currentQuestionIndex = 0;
+nextButton.classList.remove("hide");
+restartButton.classList.add("hide");
+resultDiv.classList.add("hide");
+setNextQuestion();
+}
+
+function setNextQuestion( {
+    resetState();
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
+}
+
+function showQuestion(question){
+    questionElement.innerHTML = question.question;
+    question.answers.forEach((answer, index) => {
+        const inputGroup = document.createElement ("div");
+        inputGroup.classList.add("input-group");
+
+        const radio = document.createElement("input");
+    })
+}
