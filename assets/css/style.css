@@ -49,10 +49,28 @@ input{
     width: fit-content;
 }
 .btn {
-    padding: 1.3rem;
-    background-color: rgb(161, 161, 69);
+    padding: 1.5rem;
+    background-color: #70b5ff;
     color: rgb(0, 0, 0);
     border: none;
     border-radius: 0 0 0.5rem 0.5rem;
+}
+input, 
+.btn{
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #3282d8;
+}
+.hide{
+    display: none;
+}
+#result {
+    margin: 2rem auto;
 
+}
+#question, 
+#result {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
