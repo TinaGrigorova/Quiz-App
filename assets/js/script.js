@@ -74,5 +74,19 @@ function showQuestion(question){
         inputGroup.classList.add("input-group");
 
         const radio = document.createElement("input");
-    })
+        radio.type ="radio";
+        radio.id="answer" + index;
+        radio.name="answer";
+        radio.value="index";
+
+        const label = document.createElement("label"); 
+        label.htmlFor= "answer" + index;
+        label.innerText = answer.text;
+
+        inputGroup.appendChild(radio);
+        inputGroup.appendChild(label);
+        answerButtons.appendChild(inputGroup);
+        
+    });
+    
 }
