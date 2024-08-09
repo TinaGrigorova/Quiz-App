@@ -104,6 +104,13 @@ nextButton.addEventListener("click", () => {
         if(shuffledQuestions[currentQuestionIndex].answers[answerIndex].correct){
             score++
         }
+        currentQuestionIndex++;
+        if(shuffledQuestions.lenght > currentQuestionIndex){
+            setNextQuestion();
+        }else{
+            endQuiz();
+        }
+        }
 
     }
-})
+});
