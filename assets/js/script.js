@@ -96,3 +96,14 @@ function resetState() {
         answerButtons.removeChild(answerButtons.firstChild);
     }
 }
+nextButton.addEventListener("click", () => {
+    const answerIndex = Array.from(
+        answerButtons.querySelectorAll("input")
+    ).findIndex((radio) => radio.checked);
+    if (answerIndex !== -1){
+        if(shuffledQuestions[currentQuestionIndex].answers[answerIndex].correct){
+            score++
+        }
+
+    }
+})
