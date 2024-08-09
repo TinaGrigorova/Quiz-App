@@ -62,7 +62,7 @@ resultDiv.classList.add("hide");
 setNextQuestion();
 }
 
-function setNextQuestion( {
+function setNextQuestion() {
     resetState();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
