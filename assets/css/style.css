@@ -63,7 +63,7 @@ input,
     background-color: #3282d8;
 }
 .hide{
-    display: none;
+    display:flex;
 }
 #result {
     margin: 2rem auto;

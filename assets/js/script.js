@@ -88,5 +88,11 @@ function showQuestion(question){
         answerButtons.appendChild(inputGroup);
         
     });
-    
+
+}
+
+function resetState() {
+    while (anwerButtons.firstChild){
+        answerButtons.removeChild(answerButtons.firstChild);
+    }
 }
