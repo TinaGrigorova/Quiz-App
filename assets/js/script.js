@@ -120,3 +120,11 @@ nextButton.addEventListener("click", () => {
 
 restartButton.addEventListener("click", startQuiz);
 
+function endQuiz() {
+    questionContainer.style.display = "none";
+    nextButton.classList.add("hide");
+    restartButton.classList.remove("hide");
+    resultDiv.classList.remove("hide");
+    resultDiv.innerText = `Your final score: ${score} / ${shuffledQuestions.lenght}`;
+
+}
