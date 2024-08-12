@@ -53,18 +53,21 @@ startQuiz();
 
 function startQuiz(){
 score = 0;
-questionContainer.style.display="flex";
+console.log("Hello")
+//questionContainer.style.display="flex";
 shuffledQuestions = questions.sort(() => Math.random() -0.5);
 currentQuestionIndex = 0;
 nextButton.classList.remove("hide");
 restartButton.classList.add("hide");
 resultDiv.classList.add("hide");
-setNextQuestion();
+setNextQuestion(shuffledQuestions);
 }
 
-function setNextQuestion() {
+
+function setNextQuestion(question) {
     resetState();
-    showQuestion(shuffledQuestions[currentQuestionIndex]);
+    showQuestion(question[currentQuestionIndex]);
+    console.log(question[currentQuestionIndex]);
 }
 
 function showQuestion(question){
@@ -85,7 +88,7 @@ function showQuestion(question){
 
         inputGroup.appendChild(radio);
         inputGroup.appendChild(label);
-        answerButtons.appendChild(inputGroup);
+        anwerButtons.appendChild(inputGroup);
         
     });
 
@@ -93,12 +96,12 @@ function showQuestion(question){
 
 function resetState() {
     while (anwerButtons.firstChild){
-        answerButtons.removeChild(answerButtons.firstChild);
+        anwerButtons.removeChild(anwerButtons.firstChild);
     }
 }
 nextButton.addEventListener("click", () => {
     const answerIndex = Array.from(
-        answerButtons.querySelectorAll("input")
+        anwerButtons.querySelectorAll("input")
     ).findIndex((radio) => radio.checked);
     if (answerIndex !== -1){
         if(shuffledQuestions[currentQuestionIndex].answers[answerIndex].correct){
@@ -110,7 +113,7 @@ nextButton.addEventListener("click", () => {
         }else{
             endQuiz();
         }
-        }
-
+     }else{
+        }alert("Please select an answer.");
     }
-});
+);
