@@ -117,3 +117,6 @@ nextButton.addEventListener("click", () => {
         }alert("Please select an answer.");
     }
 );
+
+restartButton.addEventListener("click", startQuiz);
+
