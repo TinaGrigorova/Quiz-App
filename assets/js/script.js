@@ -9,7 +9,7 @@ let shuffledQuestions, currentQuestionIndex , score;
 
 const questions = [
     {
-        question: "Where is the biggest lake?", 
+        question: "Where is the biggest lake in the world?", 
         answers:[
             {text: "Bulgaria", correct: false},
             {text: "Canada", correct: false},
@@ -53,7 +53,6 @@ startQuiz();
 
 function startQuiz(){
 score = 0;
-console.log("Hello")
 //questionContainer.style.display="flex";
 shuffledQuestions = questions.sort(() => Math.random() -0.5);
 currentQuestionIndex = 0;
@@ -108,14 +107,14 @@ nextButton.addEventListener("click", () => {
             score++
         }
         currentQuestionIndex++;
-        if(shuffledQuestions.lenght > currentQuestionIndex){
+        if(shuffledQuestions.length > currentQuestionIndex){
             setNextQuestion();
         }else{
-            endQuiz();
+          endQuiz();
         }
      }else{
         }alert("Please select an answer.");
-    }
+  }
 );
 
 restartButton.addEventListener("click", startQuiz);
@@ -125,6 +124,6 @@ function endQuiz() {
     nextButton.classList.add("hide");
     restartButton.classList.remove("hide");
     resultDiv.classList.remove("hide");
-    resultDiv.innerText = `Your final score: ${score} / ${shuffledQuestions.lenght}`;
+    resultDiv.innerText = `Your final score: ${score} / ${shuffledQuestions.length}`;
 
 }
