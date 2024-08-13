@@ -5,8 +5,7 @@ const nextButton = document.getElementById("next-btn");
 const restartButton = document.getElementById("restart-btn");
 const resultDiv = document.getElementById("result");
 
-
-let shuffledQuestions, currentQuestionIndex , score; 
+let shuffledQuestions, currentQuestionIndex , score;
 
 const questions = [
     {
@@ -17,7 +16,7 @@ const questions = [
             {text: "Asia", correct: true},
             {text: "Australia", correct: false},
         ]
-        
+
     }, 
     {
         question: "Which is the smallest country?", 
@@ -55,28 +54,22 @@ startQuiz();
 function startQuiz(){
 score = 0;
 //questionContainer.style.display="flex";
-shuffledQuestions = questions.sort(() => Math.random() -0.5);
+    shuffledQuestions = questions.sort(() => Math.random() -0.5);
 currentQuestionIndex = 0;
 nextButton.classList.remove("hide");
 restartButton.classList.add("hide");
 resultDiv.classList.add("hide");
-setNextQuestion();
+    setNextQuestion();
 }
 
-function setNextQuestion(){
+function setNextQuestion() {
     resetState();
-showQuestion(shuffledQuestions[currentQuestionIndex]);
-console.log(question[currentQuestionIndex]);
-}
-
-function setNextQuestion(question) {
-    resetState();
-    showQuestion(question[currentQuestionIndex]);
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
     console.log(question[currentQuestionIndex]);
 }
 
-function showQuestion(question){
-    questionElement.innerHTML = question.question;
+function showQuestion(question) {
+    questionElement.innerText = question.question;
     question.answers.forEach((answer, index) => {
         const inputGroup = document.createElement ("div");
         inputGroup.classList.add("input-group");
@@ -85,7 +78,7 @@ function showQuestion(question){
         radio.type ="radio";
         radio.id="answer" + index;
         radio.name="answer";
-        radio.value="index";
+        radio.value=index;
 
         const label = document.createElement("label"); 
         label.htmlFor= "answer" + index;
@@ -94,9 +87,7 @@ function showQuestion(question){
         inputGroup.appendChild(radio);
         inputGroup.appendChild(label);
         answerButtons.appendChild(inputGroup);
-        
     });
-
 }
 
 function resetState() {
@@ -107,21 +98,21 @@ function resetState() {
 nextButton.addEventListener("click", () => {
     const answerIndex = Array.from(
         answerButtons.querySelectorAll("input")
-    ).findIndex((radio) => {return radio.checked});
+    ).findIndex((radio) => radio.checked);
     if (answerIndex !== -1){
         if(shuffledQuestions[currentQuestionIndex].answers[answerIndex].correct){
             score++
         }
         currentQuestionIndex++;
-        if(shuffledQuestions.length > currentQuestionIndex){
+        if(currentQuestionIndex < shuffledQuestions.length){
             setNextQuestion();
         }else{
           endQuiz();
         }
-     }else{
-        }alert("Please select an answer.");
+    }else{
+        alert("Please select an answer.");
   }
-);
+});
 
 restartButton.addEventListener("click", startQuiz);
 
