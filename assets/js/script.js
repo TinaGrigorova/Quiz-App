@@ -60,9 +60,14 @@ currentQuestionIndex = 0;
 nextButton.classList.remove("hide");
 restartButton.classList.add("hide");
 resultDiv.classList.add("hide");
-setNextQuestion(shuffledQuestions);
+setNextQuestion();
 }
 
+function setNextQuestion(){
+    resetState();
+showQuestion(shuffledQuestions[currentQuestionIndex]);
+console.log(question[currentQuestionIndex]);
+}
 
 function setNextQuestion(question) {
     resetState();
