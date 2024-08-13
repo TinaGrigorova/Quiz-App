@@ -1,9 +1,10 @@
 const questionContainer = document.getElementById("question-container");
 const questionElement = document.getElementById("question");
-const anwerButtons = document.getElementById("answer-buttons");
+const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 const restartButton = document.getElementById("restart-btn");
 const resultDiv = document.getElementById("result");
+
 
 let shuffledQuestions, currentQuestionIndex , score; 
 
@@ -87,21 +88,21 @@ function showQuestion(question){
 
         inputGroup.appendChild(radio);
         inputGroup.appendChild(label);
-        anwerButtons.appendChild(inputGroup);
+        answerButtons.appendChild(inputGroup);
         
     });
 
 }
 
 function resetState() {
-    while (anwerButtons.firstChild){
-        anwerButtons.removeChild(anwerButtons.firstChild);
+    while (answerButtons.firstChild){
+        answerButtons.removeChild(answerButtons.firstChild);
     }
 }
 nextButton.addEventListener("click", () => {
     const answerIndex = Array.from(
-        anwerButtons.querySelectorAll("input")
-    ).findIndex((radio) => radio.checked);
+        answerButtons.querySelectorAll("input")
+    ).findIndex((radio) => {return radio.checked});
     if (answerIndex !== -1){
         if(shuffledQuestions[currentQuestionIndex].answers[answerIndex].correct){
             score++
