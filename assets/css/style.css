@@ -6,11 +6,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(109, 127, 143);
-}
-
-h3#question{
+  }
+  
+  h3#question {
     text-align: center;
-}
+  }
+  
 
 .quiz-container {
     display: flex;
