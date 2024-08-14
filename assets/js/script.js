@@ -1,3 +1,6 @@
+const startPage = document.getElementById("start-page");
+const startButton = document.getElementById("start-btn");
+const quizContainer = document.querySelector(".quiz-container");
 const questionContainer = document.getElementById("question-container");
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
@@ -46,7 +49,11 @@ const questions = [
     }
 ];
 
-startQuiz();
+startButton.addEventListener("click", () => {
+    startPage.classList.add("hide");
+    quizContainer.classList.remove("hide");
+    startQuiz();
+});
 
 function startQuiz(){
     score = 0;
@@ -65,7 +72,7 @@ function setNextQuestion() {
 
 function showQuestion(question) {
     questionElement.innerText = question.question;
-    question.answers.forEach((answer, index) => {
+    question.answers.forEach((answer) => {
         const button = document.createElement("button");
         button.classList.add("btn");
         button.innerText = answer.text;
