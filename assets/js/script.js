@@ -205,7 +205,7 @@ startButton.addEventListener("click", () => {
 function startQuiz(){
     score = 0;
     //randomly select 10 questions from array
-    shuffledQuestions = getRandomQuestions(questions. 10);
+    shuffledQuestions = getRandomQuestions(questions, 10);
     //shuffle the selected questions 
     shuffledQuestions = shuffledQuestions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
@@ -213,6 +213,11 @@ function startQuiz(){
     restartButton.classList.add("hide");
     resultDiv.classList.add("hide");
     setNextQuestion();
+}
+
+function getRandomQuestions(arr, num){
+    const shuffled = arr.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, num);
 }
 
 function setNextQuestion() {
