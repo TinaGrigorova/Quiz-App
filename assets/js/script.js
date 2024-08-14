@@ -208,7 +208,6 @@ function startQuiz(){
 function setNextQuestion() {
     resetState();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
-    console.log(question[currentQuestionIndex]);
 }
 
 function showQuestion(question) {
