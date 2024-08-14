@@ -227,34 +227,31 @@ function resetState() {
     }
 }
 
-function selectAnswer()
+function selectAnswer(correct) {
+    if (correct) {
+        score++;
+    }
+    currentQuestionIndex++;
+    if (currentQuestionIndex < shuffledQuestions.length) {
+        setNextQuestion();
+    } else {
+        endQuiz();
+    }
+}
 
 nextButton.addEventListener("click", () => {
-    const answerIndex = Array.from(
-        answerButtons.querySelectorAll("input")
-    ).findIndex((radio) => radio.checked);
-    if (answerIndex !== -1){
-        if(shuffledQuestions[currentQuestionIndex].answers[answerIndex].correct){
-            score++
-        }
-        currentQuestionIndex++;
-        if(currentQuestionIndex < shuffledQuestions.length){
-            setNextQuestion();
-        }else{
-          endQuiz();
-        }
-    }else{
-        alert("Please select an answer.");
-  }
+    if (currentQuestionIndex < shuffledQuestions.length) {
+        setNextQuestion();
+    } else {
+        endQuiz();
+    }
 });
 
 restartButton.addEventListener("click", startQuiz);
 
 function endQuiz() {
-    //questionContainer.style.display = "none";
     nextButton.classList.add("hide");
     restartButton.classList.remove("hide");
     resultDiv.classList.remove("hide");
     resultDiv.innerText = `Your final score: ${score} / ${shuffledQuestions.length}`;
-
 }
