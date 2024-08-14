@@ -1,78 +1,78 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(109, 127, 143);
-  }
-  
-  h3#question {
-    text-align: center;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(109, 127, 143);
+}
+
+h3#question {
+  text-align: center;
+}
 
 .quiz-container {
-    display: flex;
-    flex-direction: column;
-    width: 30rem;
-    max-width: 80%;
-    background-color: beige;
-    border-radius: 0.5rem;
-  }
-  
-  #question-container {
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
-  }
-  
-#answer-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-    gap: 1.20rem;
-  }
-  
-  .input-group {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  input {
-    width: fit-content;
-  }
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  max-width: 80%;
+  background-color: beige;
+  border-radius: 0.5rem;
+}
 
-  .btn {
-    padding: 1rem;
-    background-color: #70b5ff;
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 0.5rem;
-    justify-content: center;
-    width: 100%;
-    cursor: pointer;
-    font-size: 1rem;
-  }
-  
-  .btn:hover {
-    background-color: #3282d8;
-  }
+#question-container {
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+#answer-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 1.20rem;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+input {
+  width: fit-content;
+}
+
+.btn {
+  padding: 1rem;
+  background-color: #70b5ff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 0.5rem;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: #3282d8;
+}
+
 .hide {
-    display: flex;
-  }
-  
-  #result {
-    margin: 2rem auto;
-    text-align: center;
-  }
-  
-  #question,
-  #result {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
+  display: none;
+}
+
+#result {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+#question,
+#result {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
