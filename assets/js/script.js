@@ -213,22 +213,11 @@ function setNextQuestion() {
 function showQuestion(question) {
     questionElement.innerText = question.question;
     question.answers.forEach((answer, index) => {
-        const inputGroup = document.createElement ("div");
-        inputGroup.classList.add("input-group");
-
-        const radio = document.createElement("input");
-        radio.type ="radio";
-        radio.id="answer" + index;
-        radio.name="answer";
-        radio.value=index;
-
-        const label = document.createElement("label"); 
-        label.htmlFor= "answer" + index;
-        label.innerText = answer.text;
-
-        inputGroup.appendChild(radio);
-        inputGroup.appendChild(label);
-        answerButtons.appendChild(inputGroup);
+        const button = document.createElement("button");
+        button.classList.add("btn");
+        button.innerText = answer.text;
+        button.addEventListener("click", () => selectAnswer(answer.correct));
+        answerButtons.appendChild(button);
     });
 }
 
