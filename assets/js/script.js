@@ -226,6 +226,9 @@ function resetState() {
         answerButtons.removeChild(answerButtons.firstChild);
     }
 }
+
+function selectAnswer()
+
 nextButton.addEventListener("click", () => {
     const answerIndex = Array.from(
         answerButtons.querySelectorAll("input")
