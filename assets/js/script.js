@@ -196,13 +196,12 @@ const questions = [
 startQuiz();
 
 function startQuiz(){
-score = 0;
-//questionContainer.style.display="flex";
-    shuffledQuestions = questions.sort(() => Math.random() -0.5);
-currentQuestionIndex = 0;
-nextButton.classList.remove("hide");
-restartButton.classList.add("hide");
-resultDiv.classList.add("hide");
+    score = 0;
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+    currentQuestionIndex = 0;
+    nextButton.classList.remove("hide");
+    restartButton.classList.add("hide");
+    resultDiv.classList.add("hide");
     setNextQuestion();
 }
 
