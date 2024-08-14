@@ -8,8 +8,27 @@ body {
   background-color: rgb(109, 127, 143);
 }
 
-h3#question {
+.start-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(109, 127, 143);
+}
+
+.start-page {
   text-align: center;
+}
+
+.start-page h1 {
+  font-size: 2rem;
+  color: white;
+}
+
+.start-page p {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 1.5rem;
 }
 
 .quiz-container {
@@ -33,16 +52,6 @@ h3#question {
   align-items: flex-start;
   margin-bottom: 1rem;
   gap: 1.20rem;
-}
-
-.input-group {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-input {
-  width: fit-content;
 }
 
 .btn {
@@ -75,4 +84,3 @@ input {
   font-size: 1.5rem;
   font-weight: bold;
 }
-
