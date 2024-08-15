@@ -96,6 +96,14 @@ Quiz App provides an enjoyable and educational experience that challenges users 
     * Mockup picture for the README file.
 ---
 
+## Technologies Used
+
+* **HTML5** for structure.
+* **CSS3** for styling.
+* **JavaScript** for game logic.
+
+---
+
 ## TESTING
 
 ### Manual testing
