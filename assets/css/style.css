@@ -76,12 +76,12 @@ input {
 /* Styles for the correct and incorrect answers */
 .correct {
   background-color: #d4edda; 
-  color: #4eaf65; 
+  color: #00ff3c; 
 }
 
 .incorrect {
   background-color: #f8d7da; 
-  color: #b3414c; 
+  color: #ff0019; 
 }
 
 /* Next Button Styles */
