@@ -1,3 +1,4 @@
+//selectors for specific elements
 const startPage = document.getElementById("start-page");
 const startButton = document.getElementById("start-btn");
 const quizContainer = document.querySelector(".quiz-container");
@@ -10,6 +11,7 @@ const resultDiv = document.getElementById("result");
 
 let shuffledQuestions, currentQuestionIndex, score;
 
+//All 20 questions for the quiz 
 const questions = [
     {
         question: "Where is the biggest lake?", 
@@ -193,15 +195,17 @@ const questions = [
     }
 ];
 
-// Initializes the quiz, shuffles the questions, and resets the quiz interface.
+// Initializes the quiz, shuffles the questions, and resets the quiz interface
 function startQuiz() {
     startPage.classList.add("hide");
     quizContainer.classList.remove("hide");
+    //Resets the quiz score to zero.
     score = 0;
     // Randomly select 10 questions from the array
     shuffledQuestions = getRandomQuestions(questions, 10);
     // Shuffle the selected questions
     shuffledQuestions = shuffledQuestions.sort(() => Math.random() - 0.5);
+    //Resets the question index to start from the first question
     currentQuestionIndex = 0;
     nextButton.classList.remove("hide");
     restartButton.classList.add("hide");
@@ -209,26 +213,31 @@ function startQuiz() {
     setNextQuestion();
 }
 
-// Selects a random subset of questions from the array.
+// Selects a random subset of questions from the array
 function getRandomQuestions(arr, num) {
-    //Randomizes the order of questions.
+    //Randomizes the order of questions
     const shuffled = arr.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, num);
 }
 
-//Prepares the quiz for the next question.
+//Prepares the quiz for the next question
 function setNextQuestion() {
-    resetState()''
-    //Displays the current question using the showQuestion function.
+    resetState();
+    //Displays the current question using the showQuestion function
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
+// Displays the current question and its possible answers
 function showQuestion(question) {
+    //Sets the text of the question
     questionElement.innerText = question.question;
+
     question.answers.forEach((answer, index) => {
         const button = document.createElement("button");
         button.innerText = answer.text;
+        //Styles the button
         button.classList.add("btn", "answer-btn");
+        //Calling selectAnswer when clicked
         button.addEventListener("click", () => selectAnswer(answer));
         answerButtons.appendChild(button);
     });
