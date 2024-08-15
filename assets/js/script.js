@@ -254,7 +254,6 @@ function resetState() {
 function selectAnswer(answer) {
     const correct = answer.correct;
     const selectedButton = Array.from(answerButtons.children).find(button => button.innerText === answer.text);
-
     if (correct) {
         selectedButton.classList.add("correct");
         score++;
