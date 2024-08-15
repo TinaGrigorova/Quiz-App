@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   display: flex;
   justify-content: center;
@@ -22,65 +23,44 @@ h3#question {
 }
 
 #question-container {
+  display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
 }
 
-#answer-buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 1rem;
-  gap: 1.20rem;
-}
-
-
-.input-group {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-input {
-  width: fit-content;
-}
-
-
-.btn {
-  padding: 1.5rem;
-  color: rgb(0, 0, 0);
-  border: none;
-  border-radius: 0.5rem;
-  justify-content: center;
-  width: 100%;
-  cursor: pointer;
-  font-size: 1rem;
-  text-align: center; 
-}
-
 
 .answer-btn {
   background-color: #e0e0e0; 
-  margin-bottom: 0.5rem; 
+  color: #333; 
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
 }
 
 .answer-btn:hover {
-  background-color: #c0c0c0; 
+  background-color: #c0c0c0;
 }
 
 
 .next-btn {
-  background-color: #70b5ff; 
+  background-color: #70b5ff;
+  color: white;
 }
 
 .next-btn:hover {
-  background-color: #3282d8; 
+  background-color: #3282d8;
 }
 
 
 .restart-btn {
-  background-color: #ff7f7f; 
+  background-color: #ff7f7f;
+  color: white;
 }
 
 .restart-btn:hover {
@@ -88,27 +68,12 @@ input {
 }
 
 
-.hide {
-  display: none;
-}
-
-#result {
-  margin: 2rem auto;
-  text-align: center;
-}
-
-#question, 
-#result {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
 .start-page {
   text-align: center;
 }
 
 .start-btn {
-  background-color: #4caf50; 
+  background-color: #4caf50;
   color: white;
   padding: 1rem;
   border: none;
@@ -118,7 +83,8 @@ input {
 }
 
 .start-btn:hover {
-  background-color: #45a049; 
+  background-color: #45a049;
+}
 
 
 .hide {
@@ -134,22 +100,4 @@ input {
 #result {
   font-size: 1.5rem;
   font-weight: bold;
-}
-
-.start-page {
-  text-align: center;
-}
-
-.start-btn {
-  background-color: #4caf50; 
-  color: white;
-  padding: 1rem;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  font-size: 1.2rem;
-}
-
-.start-btn:hover {
-  background-color: #45a049; 
 }
