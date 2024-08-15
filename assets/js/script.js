@@ -264,11 +264,14 @@ function selectAnswer(answer) {
 
     currentQuestionIndex++;
     if (currentQuestionIndex < shuffledQuestions.length) {
-        setNextQuestion();
+        setTimeout(() => {
+            setNextQuestion();
+        }, 1000); // Add a delay before moving to the next question
     } else {
         endQuiz();
     }
 }
+
 nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < shuffledQuestions.length) {
         setNextQuestion();
