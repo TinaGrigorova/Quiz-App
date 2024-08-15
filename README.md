@@ -51,33 +51,33 @@ Quiz App provides an enjoyable and educational experience that challenges users 
 * **Start Page**
     * A clear and intuitive start page that prompts the user to begin the quiz.
 
-    <img width="600" alt="Start_Page" src="assets/images/start .png">
+    <img width="600" alt="Start_Page" src="assets/images/start.png">
 
 * **Quiz Interface**
     * Displays the question and multiple-choice answers.
 
-    <img width="600" alt="questions" src="assets/images/questions .png">
+    <img width="600" alt="questions" src="assets/images/questions.png">
 
 * **Highlights the correct answer in green and incorrect answers in red after selection.**
 
     * If answer is incorect will highligt in red
 
-    <img alt="incorrect answer" src="assets/images/incorrect answ.png">
+    <img alt="incorrect answer" src="assets/images/incorrect-answ.png">
 
     * If answer is correct will highligt in green
 
-    <img alt="correct answer" src="assets/images/correct answ.png">
+    <img alt="correct answer" src="assets/images/correct-answ.png">
 
 * **Score Display**
     * Shows the user's current score after each question.
 
-    <img width="600" alt="end-quiz" src="assets/images/end quiz .png">
+    <img width="600" alt="end-quiz" src="assets/images/end-quiz.png">
 
 * **Next and Reset Buttons**
 
     * Next button to move to the next question.
 
-    <img alt="next-btn" src="assets/images/next btn.png">
+    <img alt="next-btn" src="assets/images/next-btn.png">
 
     * Reset button to start the quiz over.
 
@@ -85,7 +85,7 @@ Quiz App provides an enjoyable and educational experience that challenges users 
 
  * **Footer**
 
-    <img alt="footer" src="assets/images/quiz app footer.png">
+    <img alt="footer" src="assets/images/quiz-app-footer.png">
 
 ### Features Left to Implement
 
