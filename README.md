@@ -28,3 +28,59 @@ Quiz App provides an enjoyable and educational experience that challenges users 
     * Aim to achieve a perfect score.
     * Compete with others in their environment.
     * Explore new features.
+
+  --- 
+## DESIGN
+
+### Colours
+
+#### Primary colours used:
+
+<img alt="colours" src="assets/images/used_colours.png"> 
+
+---
+
+## Features
+
+* **Main objective** is to provide an engaging platform for users to test and improve their knowledge on various topics.
+* **Random question selection** to provide a unique experience each time the quiz is played.
+* **Score tracking** to motivate users to improve.
+
+### Existing Features
+
+* **Start Page**
+    * A clear and intuitive start page that prompts the user to begin the quiz.
+
+    <img width="600" alt="Start_Page" src="assets/images/start .png">
+
+* **Quiz Interface**
+    * Displays the question and multiple-choice answers.
+
+    <img width="600" alt="questions" src="assets/images/questions .png">
+
+* **Score Display**
+    * Shows the user's current score after each question.
+
+    <img width="600" alt="end-quiz" src="assets/images/end quiz .png">
+
+* **Next and Reset Buttons**
+
+    * Next button to move to the next question.
+
+    <img alt="next-btn" src="assets/images/next btn.png">
+
+    * Reset button to start the quiz over.
+
+    <img alt="reset-btn" src="assets/images/reset-btn.png">
+
+ * **Footer**
+
+    <img alt="footer" src="assets/images/quiz app footer.png">
+
+### Features Left to Implement
+
+* Additional question categories.
+* Timer feature to add urgency to the game.
+* User authentication for a personalized experience.
+
+--- 
