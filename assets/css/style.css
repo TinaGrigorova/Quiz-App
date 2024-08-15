@@ -1,3 +1,5 @@
+/*Body Style & H3*/
+
 body {
   display: flex;
   justify-content: center;
@@ -12,6 +14,7 @@ h3#question {
   text-align: center;
 }
 
+/*Quiz Container style*/
 .quiz-container {
   display: flex;
   flex-direction: column;
@@ -109,7 +112,7 @@ input {
 }
 
 .start-btn {
-  background-color: #4caf50; /* Green */
+  background-color: #4caf50; 
   color: white;
   padding: 1rem;
   border: none;
@@ -119,7 +122,7 @@ input {
 }
 
 .start-btn:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #45a049; 
 }
 
 
@@ -143,7 +146,7 @@ input {
 }
 
 .start-btn {
-  background-color: #4caf50; /* Green */
+  background-color: #4caf50; 
   color: white;
   padding: 1rem;
   border: none;
@@ -153,5 +156,5 @@ input {
 }
 
 .start-btn:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #45a049;
 }

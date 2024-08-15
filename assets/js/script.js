@@ -193,6 +193,7 @@ const questions = [
     }
 ];
 
+// Initializes the quiz, shuffles the questions, and resets the quiz interface.
 function startQuiz() {
     startPage.classList.add("hide");
     quizContainer.classList.remove("hide");
@@ -208,14 +209,17 @@ function startQuiz() {
     setNextQuestion();
 }
 
-// Function to get a random subset of questions
+// Selects a random subset of questions from the array.
 function getRandomQuestions(arr, num) {
+    //Randomizes the order of questions.
     const shuffled = arr.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, num);
 }
 
+//Prepares the quiz for the next question.
 function setNextQuestion() {
-    resetState();
+    resetState()''
+    //Displays the current question using the showQuestion function.
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
@@ -230,12 +234,14 @@ function showQuestion(question) {
     });
 }
 
+// Clears the answers from the previous question
 function resetState() {
     while (answerButtons.firstChild){
         answerButtons.removeChild(answerButtons.firstChild);
     }
 }
 
+//Handles the logic for when an answer is selected.
 function selectAnswer(answer) {
     const correct = answer.correct;
     if (correct) {
@@ -258,10 +264,15 @@ nextButton.addEventListener("click", () => {
 
 restartButton.addEventListener("click", startQuiz);
 
+//func endQuiz displays the final score and ends the quiz
 function endQuiz() {
+    //Hides the "Next" button
     nextButton.classList.add("hide");
+    //Shows the "Restart" button
     restartButton.classList.remove("hide");
+    //Displays the results
     resultDiv.classList.remove("hide");
+    //Shows final score x/10
     resultDiv.innerText = `Your final score: ${score} / ${shuffledQuestions.length}`;
 }
 
