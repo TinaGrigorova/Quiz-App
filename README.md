@@ -184,3 +184,23 @@ By forking the repository, we make a copy of the original repository on our GitH
 7. Press Enter and your local clone will be created.
 
 --- 
+
+## CREDITS
+
+### Code
+
+* Trying different coding in JS Playground which helped me to build my project and visualise the changes in a second [JS Playground](https://jsfiddle.net/su5qtmpg/)
+* The README template was helpfuly provided by [Code Institute (template)](https://github.com/Code-Institute-Solutions/SampleREADME)
+  
+### Content
+
+* All content was written by the developer.
+* [Color contrast checker](https://coolors.co/contrast-checker/000000-f5f5dc) was used to decide which colors would be used for the website.
+
+
+### Acknowledgements
+
+ * My mentor Mitko Bachvarov provided realy helpful feedback and a links to JS Playground and [W3Scools](https://www.w3schools.com/jsref/event_onclick.asp) for onclick events .
+ * Slack community for encouragement, information and support from the students.
+
+
