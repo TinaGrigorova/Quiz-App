@@ -269,7 +269,7 @@ function selectAnswer(answer) {
         setTimeout(() => {
             resetState();
             setNextQuestion();
-        }, 1000); // Add a delay before moving to the next question
+        }, 200); // Add a delay before moving to the next question
     } else {
         setTimeout(() => {
             endQuiz();
