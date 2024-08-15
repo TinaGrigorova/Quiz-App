@@ -19,7 +19,6 @@ const questions = [
             {text: "Asia", correct: true},
             {text: "Australia", correct: false},
         ]
-        
     }, 
     {
         question: "Which is the smallest country?", 
@@ -29,7 +28,6 @@ const questions = [
             {text: "Monaco", correct: false},
             {text: "Liechtenstein", correct: false},
         ]
-
     },
     {
         question: "Where is the highest island mountain?", 
@@ -39,7 +37,6 @@ const questions = [
             {text: "Sri Lanka - Pidurutalagala", correct: false},
             {text: "New Guinea - Puncak Jaya", correct: true},
         ]
-
     },
     {
         question: "Which language has more native speakers?",
@@ -196,17 +193,13 @@ const questions = [
     }
 ];
 
-startButton.addEventListener("click", () => {
+function startQuiz() {
     startPage.classList.add("hide");
     quizContainer.classList.remove("hide");
-    startQuiz();
-});
-
-function startQuiz(){
     score = 0;
-    //randomly select 10 questions from array
+    // Randomly select 10 questions from the array
     shuffledQuestions = getRandomQuestions(questions, 10);
-    //shuffle the selected questions 
+    // Shuffle the selected questions
     shuffledQuestions = shuffledQuestions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
     nextButton.classList.remove("hide");
@@ -215,7 +208,7 @@ function startQuiz(){
     setNextQuestion();
 }
 
-function getRandomQuestions(arr, num){
+function getRandomQuestions(arr, num) {
     const shuffled = arr.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, num);
 }
@@ -227,11 +220,11 @@ function setNextQuestion() {
 
 function showQuestion(question) {
     questionElement.innerText = question.question;
-    question.answers.forEach((answer) => {
+    question.answers.forEach((answer, index) => {
         const button = document.createElement("button");
-        button.classList.add("btn");
         button.innerText = answer.text;
-        button.addEventListener("click", () => selectAnswer(answer.correct));
+        button.classList.add("btn", "answer-btn");
+        button.addEventListener("click", () => selectAnswer(answer));
         answerButtons.appendChild(button);
     });
 }
@@ -242,7 +235,8 @@ function resetState() {
     }
 }
 
-function selectAnswer(correct) {
+function selectAnswer(answer) {
+    const correct = answer.correct;
     if (correct) {
         score++;
     }
@@ -253,7 +247,6 @@ function selectAnswer(correct) {
         endQuiz();
     }
 }
-
 nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < shuffledQuestions.length) {
         setNextQuestion();
@@ -270,3 +263,5 @@ function endQuiz() {
     resultDiv.classList.remove("hide");
     resultDiv.innerText = `Your final score: ${score} / ${shuffledQuestions.length}`;
 }
+
+startButton.addEventListener("click", startQuiz);
