@@ -200,6 +200,7 @@ const questions = [
 function startQuiz() {
     startPage.classList.add("hide");
     quizContainer.classList.remove("hide");
+    footer.classList.add("hide"); // Hide the footer
     //Resets the quiz score to zero.
     score = 0;
     // Randomly select 10 questions from the array
