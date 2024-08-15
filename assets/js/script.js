@@ -250,12 +250,18 @@ function resetState() {
     }
 }
 
-//Handles the logic for when an answer is selected
+//Handles the logic for when an answer is selected 
 function selectAnswer(answer) {
     const correct = answer.correct;
+    const selectedButton = Array.from(answerButtons.children).find(button => button.innerText === answer.text);
+
     if (correct) {
+        selectedButton.classList.add("correct");
         score++;
+    } else {
+        selectedButton.classList.add("incorrect");
     }
+
     currentQuestionIndex++;
     if (currentQuestionIndex < shuffledQuestions.length) {
         setNextQuestion();
