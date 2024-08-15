@@ -8,27 +8,8 @@ body {
   background-color: rgb(109, 127, 143);
 }
 
-.start-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: rgb(109, 127, 143);
-}
-
-.start-page {
+h3#question {
   text-align: center;
-}
-
-.start-page h1 {
-  font-size: 2rem;
-  color: white;
-}
-
-.start-page p {
-  font-size: 1.2rem;
-  color: white;
-  margin-bottom: 1.5rem;
 }
 
 .quiz-container {
@@ -54,9 +35,20 @@ body {
   gap: 1.20rem;
 }
 
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+input {
+  width: fit-content;
+}
+
+
 .btn {
-  padding: 1rem;
-  background-color: #70b5ff;
+  padding: 1.5rem;
   color: rgb(0, 0, 0);
   border: none;
   border-radius: 0.5rem;
@@ -64,11 +56,37 @@ body {
   width: 100%;
   cursor: pointer;
   font-size: 1rem;
+  text-align: center; 
 }
 
-.btn:hover {
-  background-color: #3282d8;
+
+.answer-btn {
+  background-color: #e0e0e0; 
+  margin-bottom: 0.5rem; 
 }
+
+.answer-btn:hover {
+  background-color: #c0c0c0; 
+}
+
+
+.next-btn {
+  background-color: #70b5ff; 
+}
+
+.next-btn:hover {
+  background-color: #3282d8; 
+}
+
+
+.restart-btn {
+  background-color: #ff7f7f; 
+}
+
+.restart-btn:hover {
+  background-color: #d60000; 
+}
+
 
 .hide {
   display: none;
@@ -79,7 +97,40 @@ body {
   text-align: center;
 }
 
-#question,
+#question, 
+#result {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.start-page {
+  text-align: center;
+}
+
+.start-btn {
+  background-color: #4caf50; 
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.start-btn:hover {
+  background-color: #45a049; 
+
+
+.hide {
+  display: none;
+}
+
+#result {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+#question, 
 #result {
   font-size: 1.5rem;
   font-weight: bold;
