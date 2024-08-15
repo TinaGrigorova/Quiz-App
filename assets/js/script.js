@@ -250,7 +250,7 @@ function resetState() {
     }
 }
 
-//Handles the logic for when an answer is selected.
+//Handles the logic for when an answer is selected
 function selectAnswer(answer) {
     const correct = answer.correct;
     if (correct) {
