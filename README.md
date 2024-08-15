@@ -116,6 +116,26 @@ Quiz App provides an enjoyable and educational experience that challenges users 
 
 ## TESTING
 
+The W3C Markup Validator and W3C CSS Validator services were used to validate every page of the project to ensure there were no errors.
+
+ * [W3C Markup Validator](https://validator.w3.org/)
+ * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+The Esprima Validator services were used to validaye every page for the JavaScript file to ensure there were no errors. 
+
+ * [Esprima Validator](https://esprima.org/demo/validate.html)
+
+### Results
+ * After validating and checking the code with [W3C Markup Validator](https://validator.w3.org/) the results were positive and no errors or warnings were found in HTML code.
+   * <img alt="HTML-validator" src="assets/images/HTML-validator.png">
+
+
+ * After validating and checking the code with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) the results were positive and no errors were found in the CSS code.
+   * <img alt="CSS-validator" src="assets/images/CSS-validator.png">
+
+* After validating and checking the code with [Esprima Validator](https://esprima.org/demo/validate.html) the results were positive and no errors or warnings were found in HTML code.
+   * <img alt="JS-valifator" src="assets/images/JS-validator.png">
+
 ### Manual testing
 
  * The website was tested on Safari and Microsoft Edge.
