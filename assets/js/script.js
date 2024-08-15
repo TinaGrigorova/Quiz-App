@@ -253,6 +253,9 @@ function resetState() {
 //Handles the logic for when an answer is selected 
 function selectAnswer(answer) {
     const correct = answer.correct;
+    // Disable all buttons after an answer is selected
+    Array.from(answerButtons.children).forEach(button => button.disabled = true);
+    
     const selectedButton = Array.from(answerButtons.children).find(button => button.innerText === answer.text);
     if (correct) {
         selectedButton.classList.add("correct");
@@ -264,10 +267,13 @@ function selectAnswer(answer) {
     currentQuestionIndex++;
     if (currentQuestionIndex < shuffledQuestions.length) {
         setTimeout(() => {
+            resetState();
             setNextQuestion();
         }, 1000); // Add a delay before moving to the next question
     } else {
-        endQuiz();
+        setTimeout(() => {
+            endQuiz();
+        }, 1000);
     }
 }
 
