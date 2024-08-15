@@ -84,3 +84,57 @@ Quiz App provides an enjoyable and educational experience that challenges users 
 * User authentication for a personalized experience.
 
 --- 
+## FRAMEWORKS, PROGRAMS AND LIBRARYS USED 
+
+ * [Github](https://github.com/)
+    * To write and update the code.
+ * [Git](https://git-scm.com/)
+    * for vission control.
+ * [Github](https://github.com/)
+    * Deployment of the website and storing the files online.
+* [Am I Responsive](https://ui.dev/amiresponsive)
+    * Mockup picture for the README file.
+---
+
+## TESTING
+
+### Manual testing
+
+ * The website was tested on Safari and Microsoft Edge.
+ * The website was viewed on a desktop computer, laptop, and Iphone 14 Pro Max mobile phone.
+ * Large amount of testing was done to ensure links between pages are working correctly on all pages.
+ * Dev Tools was used to test how the site looks on various screen sizes.
+
+---
+## DEPLOYMENT AND LOCAL DEVELOPMENT
+
+### GitHub
+
+* The site was deployed to GitHub pages.
+
+ * Log in to GitHub and locate Github Repository [Quiz App](https://github.com/TinaGrigorova/Quiz-App.git)
+ * At the top of the Repository(not the main navigation) locate "Settings" button on the menu.
+ * Scroll down the Settings page until you locate "GitHub Pages".
+ * Under "Source", click the dropdown menu "None" and select "Main" and click "Save".
+ * The page will automatically refresh.
+ * Scroll back to locate the now-published site link in the "GitHub Pages" section.
+
+### Forking the GitHub Repository
+
+By forking the repository, we make a copy of the original repository on our GitHub account to view and change without affecting the original repository by using these steps:
+
+1. Log in to GitHub and locate [Quiz App](https://github.com/TinaGrigorova/Quiz-App.git)
+2. At the top of the Repository(under the main navigation) locate "Fork" button.
+3. Now you should have a copy of the original repository in your GitHub account.
+
+### Local Clone
+
+1. Log in to GitHub and locate [Quiz App](https://github.com/TinaGrigorova/Quiz-App.git)
+2. Under the repository name click "Clone or download"
+3. Click on the code button, select clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone` and then paste The URL copied in the step 3.
+7. Press Enter and your local clone will be created.
+
+--- 

@@ -5,7 +5,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: rgb(109, 127, 143);
+  background-color: #6d7f8f;
 }
 
 h3#question {
@@ -18,7 +18,7 @@ h3#question {
   flex-direction: column;
   width: 30rem;
   max-width: 80%;
-  background-color: beige;
+  background-color: #f5f5dc;
   border-radius: 0.5rem;
 }
 
@@ -58,35 +58,35 @@ input {
   width: 100%;
   cursor: pointer;
   font-size: 1rem;
-  text-align: center; /* Ensure text is centered */
+  text-align: center;
 }
 
 /* Answer Button Styles */
 .answer-btn {
-  background-color: #e0e0e0; /* Light grey */
-  margin-bottom: 0.5rem; /* Space between buttons */
+  background-color: #e0e0e0; 
+  margin-bottom: 0.5rem; 
 }
 
 .answer-btn:hover {
-  background-color: #c0c0c0; /* Darker grey on hover */
+  background-color: #c0c0c0; 
 }
 
 /* Next Button Styles */
 .next-btn {
-  background-color: #70b5ff; /* Light blue */
+  background-color: #70b5ff;
 }
 
 .next-btn:hover {
-  background-color: #3282d8; /* Darker blue on hover */
+  background-color: #3282d8; 
 }
 
 /* Restart Button Styles */
 .restart-btn {
-  background-color: #ff7f7f; /* Light red */
+  background-color: #ff7f7f; 
 }
 
 .restart-btn:hover {
-  background-color: #d60000; /* Darker red on hover */
+  background-color: #d60000; 
 }
 
 /* Hide Class */
