@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--Header-->
+    <!-- Header -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Quiz App</title>
 </head>
 <body>
-    <!--Start Page section -->
+    <!-- Start Page Section -->
     <div id="start-page" class="start-page">
+        <!-- Welcome message and Start Quiz button -->
         <h1>Welcome to the Quiz App!</h1>
         <button id="start-btn" class="btn">Start Quiz</button>
     </div>
-    <!--quiz container section and question container-->
+
+    <!-- Quiz Container Section -->
     <div class="quiz-container hide">
+        <!-- Question container with question text and answer buttons -->
         <div id="question-container" class="question-container">
             <h3 id="question">Question</h3>
             <div id="answer-buttons"></div>
-            <!--NExt and Restart Buttons-->
+            <!-- Next and Restart Buttons -->
             <button id="next-btn" class="btn next-btn hide">Next</button>
             <div id="result" class="hide"></div>
         </div>
-<button id="restart-btn" class="btn restart-btn hide">Restart</button>
+        <!-- Restart Button -->
+        <button id="restart-btn" class="btn restart-btn hide">Restart</button>
     </div>
-    <!-- Footer Section -->
-<footer class="footer" id="footer">
-    <p>Created by <span class="footer-name">Tina Grigorova</span></p>
-</footer>
 
+    <!-- Footer Section -->
+    <footer class="footer" id="footer">
+        <p>Created by <span class="footer-name">Tina Grigorova</span></p>
+    </footer>
+
+    <!-- JavaScript file -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
