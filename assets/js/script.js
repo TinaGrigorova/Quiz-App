@@ -287,7 +287,16 @@ nextButton.addEventListener("click", () => {
     }
 });
 
-restartButton.addEventListener("click", startQuiz);
+// Event listener for the "Restart" button
+restartButton.addEventListener("click", () => {
+    startPage.classList.remove("hide");
+    quizContainer.classList.add("hide");
+    resultDiv.classList.add("hide");
+    // Optionally reset the quiz state here
+    currentQuestionIndex = 0;
+    score = 0;
+});
+
 
 //func endQuiz displays the final score and ends the quiz
 function endQuiz() {

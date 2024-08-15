@@ -133,7 +133,7 @@ The Esprima Validator services were used to validaye every page for the JavaScri
  * After validating and checking the code with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) the results were positive and no errors were found in the CSS code.
    * <img alt="CSS-validator" src="assets/images/CSS-validator.png">
 
-* After validating and checking the code with [Esprima Validator](https://esprima.org/demo/validate.html) the results were positive and no errors or warnings were found in HTML code.
+* After validating and checking the code with [Esprima Validator](https://esprima.org/demo/validate.html) the results were positive and no errors or warnings were found in JavaScript code.
    * <img alt="JS-valifator" src="assets/images/JS-validator.png">
 
 ### Manual testing
@@ -142,6 +142,11 @@ The Esprima Validator services were used to validaye every page for the JavaScri
  * The website was viewed on a desktop computer, laptop, and Iphone 14 Pro Max mobile phone.
  * Large amount of testing was done to ensure links between pages are working correctly on all pages.
  * Dev Tools was used to test how the site looks on various screen sizes.
+
+### Fixed bugs
+
+ * Footer was covering the content after quiz has been started, it has been removed (hidden) just after the "start" button is clicked. 
+ * All answers could be chosen at the same time, this is fixed by adding `setTimeout` func and disable property for the buttons. 
 
 ---
 ## DEPLOYMENT AND LOCAL DEVELOPMENT
