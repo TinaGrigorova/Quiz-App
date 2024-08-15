@@ -136,6 +136,9 @@ The Esprima Validator services were used to validaye every page for the JavaScri
 * After validating and checking the code with [Esprima Validator](https://esprima.org/demo/validate.html) the results were positive and no errors or warnings were found in JavaScript code.
    * <img alt="JS-valifator" src="assets/images/JS-validator.png">
 
+* After validating the colors and the fonts chosen are easy to read [Colour Contrast Checker](https://coolors.co/contrast-checker/112a46-acc8e5)
+   * <img alt="contrast-text-vs-backgroud" src="assets/images/contrast-text-vs-background.png">
+
 ### Manual testing
 
  * The website was tested on Safari and Microsoft Edge.
